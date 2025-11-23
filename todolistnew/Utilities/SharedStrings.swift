@@ -26,4 +26,7 @@ enum SharedStrings {
     static let setDueDateToggle = LocalizationUtility.translate("set_due_date_toggle", fallback: "Set Due Date")
     static let whatNeedsToBeDone = LocalizationUtility.translate("what_needs_to_be_done", fallback: "What needs to be done?")
     static let notesLabel = LocalizationUtility.translate("notes_label", fallback: "Notes")
+    static let tabToday = LocalizationUtility.translate("tab_today", fallback: "Today")
+    static let tabInbox = LocalizationUtility.translate("tab_inbox", fallback: "Inbox")
+    static let tabSearch = LocalizationUtility.translate("tab_search", fallback: "Search")
 }

@@ -23,3 +23,6 @@
 "set_due_date_toggle" = "Set Due Date";
 "what_needs_to_be_done" = "What needs to be done?";
 "notes_label" = "Notes";
+"tab_today" = "Today";
+"tab_inbox" = "Inbox";
+"tab_search" = "Search";

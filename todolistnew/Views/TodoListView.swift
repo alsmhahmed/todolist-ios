@@ -2,7 +2,6 @@ import SwiftUI
 
 struct TodoListView: View {
     @EnvironmentObject var viewModel: TodoListViewModel
-    @State private var showingAddSheet = false
     @State private var selectedTodo: TodoItem?
     
     var body: some View {
@@ -87,30 +86,8 @@ struct TodoListView: View {
                     .padding(.horizontal, 16)
                     .padding(.bottom, 16) // Leave space for FAB area if needed, but FAB is overlay
                 }
-                
-                // Floating Action Button
-                VStack {
-                    Spacer()
-                    HStack {
-                        Spacer()
-                        Button(action: { showingAddSheet = true }) {
-                            Image(systemName: "plus")
-                                .font(.title2.weight(.bold))
-                                .foregroundColor(.white)
-                                .frame(width: 56, height: 56)
-                                .background(Color.accentRed)
-                                .clipShape(Circle())
-                                .shadow(color: Color.accentRed.opacity(0.4), radius: 8, x: 0, y: 4)
-                        }
-                        .padding(.trailing, 32)
-                        .padding(.bottom, 32)
-                    }
-                }
             }
             .navigationBarHidden(true)
-            .sheet(isPresented: $showingAddSheet) {
-                TodoFormView(viewModel: viewModel)
-            }
             .sheet(item: $selectedTodo) { item in
                 TodoFormView(viewModel: viewModel, itemToEdit: item)
             }

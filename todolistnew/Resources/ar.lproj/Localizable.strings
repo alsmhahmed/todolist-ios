@@ -23,3 +23,6 @@
 "set_due_date_toggle" = "تحديد موعد";
 "what_needs_to_be_done" = "ما الذي يجب إنجازه؟";
 "notes_label" = "ملاحظات";
+"tab_today" = "اليوم";
+"tab_inbox" = "المهام";
+"tab_search" = "بحث";
